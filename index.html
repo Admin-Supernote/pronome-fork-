@@ -1,15 +1,34 @@
-<script>
-    // Funzione per generare un colore randomico per il tasto login (escluso bianco)
-    function randomLoginButtonColor() {
-        const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A5', '#FFC300'];
-        const randomColor = colors[Math.floor(Math.random() * colors.length)];
-        const loginBtn = document.getElementById('loginBtn');
-        loginBtn.style.backgroundColor = randomColor;
-        loginBtn.style.color = 'black'; // Testo nero
-    }
-
-    // Esegui la funzione quando la pagina viene caricata
-    window.onload = function() {
-        randomLoginButtonColor();
-    }
-</script>
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNote - Login</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Stile fisso per il pulsante di login */
+        #loginBtn {
+            background-color: #3498db; /* Colore azzurro */
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        #loginBtn:hover {
+            background-color: #2980b9; /* Colore più scuro al passaggio del mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h1>SuperNote</h1>
+        <div class="login-form">
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button id="loginBtn" onclick="login()">LOGIN</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
