@@ -1,0 +1,15 @@
+<script>
+    // Funzione per generare un colore randomico per il tasto login (escluso bianco)
+    function randomLoginButtonColor() {
+        const colors = ['#FF5733', '#33FF57', '#3357FF', '#FF33A5', '#FFC300'];
+        const randomColor = colors[Math.floor(Math.random() * colors.length)];
+        const loginBtn = document.getElementById('loginBtn');
+        loginBtn.style.backgroundColor = randomColor;
+        loginBtn.style.color = 'black'; // Testo nero
+    }
+
+    // Esegui la funzione quando la pagina viene caricata
+    window.onload = function() {
+        randomLoginButtonColor();
+    }
+</script>
