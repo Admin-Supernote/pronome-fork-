@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNote - Admin Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Admin Dashboard</h1>
+    <label for="class-name-input">Nome Classe:</label>
+    <input type="text" id="class-name-input" placeholder="Inserisci il nome della classe">
+    <button onclick="changeClassName()">Cambia Classe</button>
+
+    <h2>Aggiungi Compito</h2>
+    <input type="text" id="subject" placeholder="Materia">
+    <input type="text" id="text" placeholder="Testo Compito">
+    <input type="color" id="colorPicker">
+    <select id="day">
+        <option value="Monday">Lunedì</option>
+        <option value="Tuesday">Martedì</option>
+        <option value="Wednesday">Mercoledì</option>
+        <option value="Thursday">Giovedì</option>
+        <option value="Friday">Venerdì</option>
+    </select>
+    <button onclick="addTask()">Aggiungi Compito</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
