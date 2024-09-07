@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperNote - Profile Settings</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Impostazioni Profilo</h1>
+    <h2>Lingua</h2>
+    <select id="language" onchange="changeLanguage()">
+        <option value="it">Italiano</option>
+        <option value="fr">Francese</option>
+        <option value="en">Inglese</option>
+        <option value="de">Tedesco</option>
+        <option value="es">Spagnolo</option>
+    </select>
+
+    <h2>Cambia Sfondo</h2>
+    <input type="color" id="bg-color" onchange="changeBackgroundColor()">
+    <button onclick="uploadImage()">Carica Immagine</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
